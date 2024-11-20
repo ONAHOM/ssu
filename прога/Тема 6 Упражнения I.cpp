@@ -8,15 +8,15 @@ int main(){
     cin >> n;
     cout << "Введите прожуток суммы для маcива\n";
     cin >> a >> b;
-    cout << "Введите прожуток суммы для маcива\n";
-    a -= 1;
-    b -= 1;
     int v[20];
+    cout << "Введите маcив длинной "<< n << '\n';
     for (int i = 0; i < n;++i){
         cin >> v[i];
     }
-    for (int i = a; i <= b; i++){
-        s += v[i];
+    for (int i = 0; i < n; i++){
+        if (a <= v[i] and b >= v[i]){
+            s += v[i];
+        }
     }
     cout << s;
 }

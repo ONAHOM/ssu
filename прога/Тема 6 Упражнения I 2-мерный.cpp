@@ -4,9 +4,9 @@ using namespace std;
 
 int main(){
     int n,m,x1,x2,summ = 0,c=1;
-    cout << "Введите коллиство строк и столбцов двумерного массива (1 <= n,m <= 9)\n";
+    cout << "Введите коллиство строк и столбцов двумерного массива (1 <= n,m <= 10)\n";
     cin >> n >> m;
-    cout << "Введите промжуток суммы\n";
+    cout << "Введите интервал суммы\n";
     cin >> x1 >> x2;
     int mass[10][10];
     for (int i = 0; i < n; ++i){
@@ -17,10 +17,9 @@ int main(){
     }
     for (int i = 0; i < n; ++i){
         for (int j = 0; j < m; ++j){
-            if (c <= x2 and c >= x1){
+            if (mass[i][j] <= x2 and mass[i][j] >= x1){
                 summ += mass[i][j];
             }
-            c++;
         }
     }
     cout << summ;

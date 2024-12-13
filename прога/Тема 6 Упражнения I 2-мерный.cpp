@@ -17,7 +17,7 @@ int main(){
     }
     for (int i = 0; i < n; ++i){
         for (int j = 0; j < m; ++j){
-            if (mass[i][j] <= x2 and mass[i][j] >= x1){
+            if (mass[i][j] <= x2 && mass[i][j] >= x1){
                 summ += mass[i][j];
             }
         }

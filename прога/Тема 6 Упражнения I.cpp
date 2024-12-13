@@ -14,7 +14,7 @@ int main(){
         cin >> v[i];
     }
     for (int i = 0; i < n; i++){
-        if (a <= v[i] and b >= v[i]){
+        if (a <= v[i] && b >= v[i]){
             s += v[i];
         }
     }

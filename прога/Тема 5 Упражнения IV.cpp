@@ -9,14 +9,15 @@ int main(){
     cout << "Введите eпcилон\n";
     int j = 1, k = 1;
     cin >> ep;
-    for (float i = 0.5; i <= 1.5; i += 0.1){
+    for (long double i = 0.5; i <= 1.5; i += 0.1){
         a = i - 1;
+        cout << (abs(a) >= ep) << ' ' << a << '\n';
         while (abs(a) >= ep){
             s += a;
             j++;
             a *= -(i - 1) * (j-1) / j;
         }
-        cout << k << '\t' << fixed << setprecision(4) << s << "\t\t" << j - 1 << '\n' ;
+        cout << k << '\t' << fixed << setprecision(4) << s << "\t\t" << j - 1<< '\n' ;
         k++;
         s = 0;
         j = 1;

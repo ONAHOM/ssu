@@ -9,10 +9,9 @@ int main(){
     cout << "Введите eпcилон\n";
     int j = 1, k = 1;
     cin >> ep;
-    for (long double i = 0.5; i <= 1.5; i += 0.1){
+    for (long double i = 0.5; i < 1.6; i += 0.1){
         a = i - 1;
-        cout << (abs(a) >= ep) << ' ' << a << '\n';
-        while (abs(a) >= ep){
+        while ((abs(a) + ep * 0.1) >= ep){
             s += a;
             j++;
             a *= -(i - 1) * (j-1) / j;

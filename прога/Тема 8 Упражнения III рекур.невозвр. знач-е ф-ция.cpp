@@ -5,6 +5,7 @@ using namespace std;
 void divisors(int n) {
     static int divisor = 1;
     if (n < divisor) {
+        divisor = 1;
         return;
     } else if (n % divisor == 0) {
         cout << divisor << " ";

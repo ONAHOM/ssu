@@ -16,7 +16,7 @@ int main(){
             j++;
             a *= -(i - 1) * (j-1) / j;
         }
-        cout << k << '\t' << fixed << setprecision(4) << s << "\t\t" << j - 1<< '\n' ;
+        cout << k << '\t' << i << '\t' << fixed << setprecision(4) << s << "\t\t" << j - 1<< '\n' ;
         k++;
         s = 0;
         j = 1;

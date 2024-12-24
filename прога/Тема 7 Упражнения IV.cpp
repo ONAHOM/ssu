@@ -6,12 +6,16 @@ using namespace std;
 int main(){
     string s;
     int curent = 1, mCount = 0;
-    cin >> s;
+    getline(cin,s);
     for (int i = 0; i < (s.length() - 1); i++){
-        if (s[i] == s[i+1]){
+        if (isdigit(s[i]) && isdigit(s[i+1])){
             curent++;
-        }else if (curent > mCount){
+        }
+        else if (curent > mCount){
             mCount  = curent;
+            curent = 1;
+        }
+        else{
             curent = 1;
         }
     }

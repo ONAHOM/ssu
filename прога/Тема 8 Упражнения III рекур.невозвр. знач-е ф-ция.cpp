@@ -16,10 +16,17 @@ void divisors(int n) {
         divisors(n);
     }
 }
- 
+
+int fact(int n){
+    if (n == 1){
+        return n;
+    }else if (n == 0){
+        return 1;
+    }
+    return n*fact(n-1);
+}
 int main() {
     int n;
     cin >> n;
-    cout << "Его делители:\n";
-    divisors(n);
+    cout << fact(n);
 }

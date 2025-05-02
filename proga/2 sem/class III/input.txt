@@ -1,0 +1,6 @@
+Gagarina 5 Sergey Ger Ivanovich 2
+Pyshkina 9 Polina Lava Olegovna 40
+Karasevak 10 Kirill Amogusov Petrovich 40
+Gagarina 4 Sergey Ger Ivanovich 2
+Chapaeva 8 Artem Mamyt Igorevich 80
+Pyshkina 10 Oleg Bravler Bobrov 45

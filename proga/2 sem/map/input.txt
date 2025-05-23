@@ -1,0 +1,1 @@
+10 apples 25 -10 bananas 0 8 oranges -25 10 4 2 -4
